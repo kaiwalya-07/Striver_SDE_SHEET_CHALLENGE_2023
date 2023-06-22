@@ -23,6 +23,6 @@ vector<int> nextPermutation(vector<int> &permutation, int n)
     }
 
 
-    sort(permutation.begin()+p+1,permutation.end());
+    reverse(permutation.begin()+p+1,permutation.end());
     return permutation;
 }
